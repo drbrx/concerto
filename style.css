@@ -15,6 +15,21 @@ input[type=button]:hover {
     color: black;
 }
 
+header {
+    height: 50px;
+    background-color: rgba(255, 111, 0, 0.325);
+    margin-bottom: 15px;
+}
+
+header img {
+    height: 100%;
+}
+
+header a {
+    color: rgb(220, 20, 60);
+    font-size: xx-large;
+}
+
 /*---------------------------------------------------------*/
 .evento {
     background-color: rgba(255, 111, 0, 0.325);
@@ -41,19 +56,35 @@ input[type=button]:hover {
     width: auto;
 }
 
-header {
-    height: 50px;
+#info {
+    text-align: justify;
+    height: 150px;
+    width: 90%;
+    margin: 10px 5%;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 12px;
     background-color: rgba(255, 111, 0, 0.325);
-    margin-bottom: 15px;
 }
 
-header img {
-    height: 100%;
+#about {
+    text-align: center;
+
 }
 
-header a {
-    color: rgb(220, 20, 60);
-    font-size: xx-large;
+#info a {
+    height: 50px;
+    width: 100%;
+}
+
+#info img {
+    height: 100px;
+    float: left;
+}
+
+info p {
+    text-align: justify;
+    height: 100px;
+    float: left;
 }
 
 /*----------------------------------------------------------*/

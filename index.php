@@ -11,6 +11,15 @@
         <img src="images/logo.jpg" onclick="location.href='index.php'"></img>
         <a href="index.php">Biglietteria</a>
     </header>
+    <div id="info">
+        <div id="about">
+            <a>Chi Siamo:</a>
+        </div>
+        <div style="clear: both;"></div>
+        <img src="images/group.jpg"></img>
+        <p>Siamo delle persone che producono suoni considerati piacevoli</p>
+        <div style="clear: both;"></div>
+    </div>
     <div style="clear: both;"></div>
     <?php
     require_once("dbConnector.php");
