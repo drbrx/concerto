@@ -7,6 +7,11 @@
 </head>
 
 <body>
+    <header>
+        <img src="images/logo.jpg" onclick="location.href='index.php'"></img>
+        <a href="index.php">Biglietteria</a>
+    </header>
+    <div style="clear: both;"></div>
     <?php
     require_once("dbConnector.php");
 
@@ -24,7 +29,7 @@
                 . "</div>"
                 . "Data: " . $currentRecord['data'] . "<br></br>"
                 . "Posti Disponibili: " . $currentRecord['posti'] . "<br></br>"
-                . "Prenota: " . "<input type=\"button\" onclick=\"location.href='prenota.php?evento=" . $currentRecord['id'] . "'\" value=\"" . $currentRecord['costoBiglietto'] . "\"/>"
+                . "Prenota: " . "<input type=\"button\" title=\"" . ($currentRecord['posti'] > 0 ? "Prenota ora!" : "Posti esauriti") . "\" onclick=\"location.href='prenota.php?evento=" . $currentRecord['id'] . "'\" value=\"" . $currentRecord['costoBiglietto'] . "\"/>"
                 . "<br></br>"
                 . "</div>";
             if (!$placeOnLeft) {
